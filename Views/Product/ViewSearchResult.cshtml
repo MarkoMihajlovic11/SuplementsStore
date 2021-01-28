@@ -15,6 +15,14 @@
     <title>ListView</title>
 </head>
 <body>
+    <!-- Search message -->
+    @if (TempData["message"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["message"]
+        </div>
+    }
+    <!-- Search result -->
     @foreach (var p in Model)
     {
         <div class="card card-body bg-light m-4">

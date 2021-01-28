@@ -42,13 +42,16 @@ namespace SuplementsStore1.Controllers
         {
             if (SearchTerm != null)
             {
+                TempData["message"] = $"You are searched for \"{SearchTerm}\" "; //search message
                 return View(repository.Products.Where(p => p.Name.ToLower().Contains(SearchTerm.ToLower())
                  || p.Category.ToLower().Contains(SearchTerm.ToLower())
-                 || p.Description.ToLower().Contains(SearchTerm.ToLower())));
+                 || p.Description.ToLower().Contains(SearchTerm.ToLower()))); //return view
+
             }
             else
             {
-                return View(repository.Products);
+                TempData["message"] = $"You are searched for \" \""; //search message
+                return View(repository.Products); //return view
             }    
         }
     }
