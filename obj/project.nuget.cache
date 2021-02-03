@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jqrsWL6U6IoD07qXv4BcOwMqZ1W+xR7E1aK43lMP6tCtBNu0Bz6xrZDzAEfV9g2YZ2eh13tGPhNAa+YOtoafJg==",
+  "dgSpecHash": "koHPPQniecX820nmgipMFvbNNC4FGJyHbkP2EGmfZedjPaSOlYiW0CFLRtF+ALRJ05Pud4BsRJd1uBUcJ5Sixw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mare\\source\\repos\\SuplementsStore1\\SuplementsStore1.csproj",
+  "projectFilePath": "C:\\Users\\Mare\\Source\\Repos\\MarkoMihajlovic11\\SuplementsStoreReal\\SuplementsStore1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mare\\.nuget\\packages\\libuv\\1.9.0\\libuv.1.9.0.nupkg.sha512",
     "C:\\Users\\Mare\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\1.0.0\\microsoft.aspnetcore.antiforgery.1.0.0.nupkg.sha512",

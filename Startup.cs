@@ -31,8 +31,6 @@ namespace SuplementsStore1
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-            services.AddIdentity<IdentityUser, IdentityRole>()
-                    .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddDbContext<ApplicationDbContext>(options =>
                            options.UseSqlServer(
@@ -69,9 +67,6 @@ namespace SuplementsStore1
 
             app.UseSession();
             app.UseHttpsRedirection();
-
-            app.UseAuthentication();
-            app.UseAuthorization();
 
             app.UseRouting();
             app.UseEndpoints(routes =>
