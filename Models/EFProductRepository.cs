@@ -57,7 +57,7 @@ namespace SuplementsStore1.Models
                     string filePath = Path.Combine(hostingEnviroment.WebRootPath,
                             "images", dbEntry.PhotoPath);
                     File.Delete(filePath);
-                }
+                }//brisanje slike proizvoda
 
                 context.Products.Remove(dbEntry);
                 context.SaveChanges();
@@ -66,8 +66,7 @@ namespace SuplementsStore1.Models
         }
 
         public Product GetProduct(int productId)
-        {
-            
+        {         
             return context.Products
                 .FirstOrDefault(p => p.ProductID == productId);
         }

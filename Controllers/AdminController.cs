@@ -21,11 +21,13 @@ namespace SuplementsStore1.Controllers
             this.repository = repository;
             this.hostingEnvironment = hostingEnvironment;
         }
+
         //lista proizvoda u admin-viewu
         public IActionResult Index()
         {
             return View(repository.Products);
         }
+
         //izmena prozivoda view
         public ViewResult Edit(int productId)
         {
@@ -40,10 +42,7 @@ namespace SuplementsStore1.Controllers
                 ExistingPhotoPath = product.PhotoPath
             };
 
-            return View(createOrEditProductViewModel);
-            
-            //return View(repository.Products
-            //    .FirstOrDefault(p => p.ProductID == productId));
+            return View(createOrEditProductViewModel);            
         }
 
         //ukoliko je validacija bila uspesna, korisnik se vraca da vidi listu izmenjenih-dodatih proizvoda
@@ -84,6 +83,7 @@ namespace SuplementsStore1.Controllers
         {
             return View();
         }
+
         //create view on post
         [HttpPost]
         public IActionResult Create(ProductCreateViewModel model)
@@ -108,9 +108,8 @@ namespace SuplementsStore1.Controllers
             }
 
             return View(); 
-
-
         }
+
         //method za dobijanje uniqe file imena i cuvanje slike u projekat
         private string ProcesUploadedPhoto(ProductCreateViewModel model)
         {
