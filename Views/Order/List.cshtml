@@ -66,7 +66,10 @@
     }
     else
     {
-        <div class="text-center">No Unshiped Orders.</div>
+        <div class="text-left">No Unshiped Orders.</div><br />
+        <!-- Return to home page button -->
+        <a asp-action="List" asp-controller="Product" 
+           class="btn btn-success">Return to home page</a>
     }
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
