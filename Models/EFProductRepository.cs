@@ -1,5 +1,8 @@
-﻿using SuplementsStore1.Data;
+﻿using Microsoft.AspNetCore.Hosting;
+using SuplementsStore1.Data;
+using SuplementsStore1.Models.ViewModels;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace SuplementsStore1.Models
@@ -8,12 +11,16 @@ namespace SuplementsStore1.Models
     public class EFProductRepository : IProductRepository
     {
         private readonly ApplicationDbContext context;
+        private readonly IWebHostEnvironment hostingEnviroment;
 
-        public EFProductRepository(ApplicationDbContext context)
+        public EFProductRepository(ApplicationDbContext context,
+                                    IWebHostEnvironment hostingEnviroment)
         {
             this.context = context;
+            this.hostingEnviroment = hostingEnviroment;
         }
         public IEnumerable<Product> Products => context.Products;
+
 
         //metoda dodaje prozivod u repository ako je ID=0
         //ako nije menja postojeci prozivod
@@ -45,10 +52,24 @@ namespace SuplementsStore1.Models
                 .FirstOrDefault(p => p.ProductID == productID);
             if (dbEntry != null)
             {
+                if(dbEntry.PhotoPath != null)
+                {
+                    string filePath = Path.Combine(hostingEnviroment.WebRootPath,
+                            "images", dbEntry.PhotoPath);
+                    File.Delete(filePath);
+                }
+
                 context.Products.Remove(dbEntry);
                 context.SaveChanges();
             }
             return dbEntry;
+        }
+
+        public Product GetProduct(int productId)
+        {
+            
+            return context.Products
+                .FirstOrDefault(p => p.ProductID == productId);
         }
     }
 }

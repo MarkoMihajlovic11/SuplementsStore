@@ -25,7 +25,9 @@
     <!-- Search result -->
     @foreach (var p in Model)
     {
+        var photoPath = "/images/" + (p.PhotoPath ?? "noimage.jpg");
         <div class="card card-body bg-light m-4">
+            <img style="height:150px; width:150px" src="@photoPath" />
             <h3>
                 <strong>@p.Name</strong>
                 <span class="badge badge-primary float-right">

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mare\\Source\\Repos\\MarkoMihajlovic11\\SuplementsStoreReal\\SuplementsStore1.csproj": {}
+    "C:\\Users\\Mare\\source\\repos\\MarkoMihajlovic11\\SuplementsStoreReal\\SuplementsStore1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mare\\Source\\Repos\\MarkoMihajlovic11\\SuplementsStoreReal\\SuplementsStore1.csproj": {
+    "C:\\Users\\Mare\\source\\repos\\MarkoMihajlovic11\\SuplementsStoreReal\\SuplementsStore1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mare\\Source\\Repos\\MarkoMihajlovic11\\SuplementsStoreReal\\SuplementsStore1.csproj",
+        "projectUniqueName": "C:\\Users\\Mare\\source\\repos\\MarkoMihajlovic11\\SuplementsStoreReal\\SuplementsStore1.csproj",
         "projectName": "SuplementsStore1",
-        "projectPath": "C:\\Users\\Mare\\Source\\Repos\\MarkoMihajlovic11\\SuplementsStoreReal\\SuplementsStore1.csproj",
+        "projectPath": "C:\\Users\\Mare\\source\\repos\\MarkoMihajlovic11\\SuplementsStoreReal\\SuplementsStore1.csproj",
         "packagesPath": "C:\\Users\\Mare\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mare\\Source\\Repos\\MarkoMihajlovic11\\SuplementsStoreReal\\obj\\",
+        "outputPath": "C:\\Users\\Mare\\source\\repos\\MarkoMihajlovic11\\SuplementsStoreReal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

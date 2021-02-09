@@ -420,3 +420,4 @@ C:\Users\Mare\Source\Repos\MarkoMihajlovic11\SuplementsStoreReal\obj\Debug\netco
 C:\Users\Mare\Source\Repos\MarkoMihajlovic11\SuplementsStoreReal\obj\Debug\netcoreapp3.1\SuplementsStore1.dll
 C:\Users\Mare\Source\Repos\MarkoMihajlovic11\SuplementsStoreReal\obj\Debug\netcoreapp3.1\SuplementsStore1.pdb
 C:\Users\Mare\Source\Repos\MarkoMihajlovic11\SuplementsStoreReal\obj\Debug\netcoreapp3.1\SuplementsStore1.genruntimeconfig.cache
+C:\Users\Mare\source\repos\MarkoMihajlovic11\SuplementsStoreReal\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Create.cshtml.g.cs

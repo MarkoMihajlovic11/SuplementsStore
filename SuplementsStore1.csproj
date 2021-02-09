@@ -16,6 +16,8 @@
     <Compile Remove="Data\Migrations\20210122145240_Initial.Designer.cs" />
     <Compile Remove="Data\Migrations\20210125181127_Initial.cs" />
     <Compile Remove="Data\Migrations\20210125181127_Initial.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210208131933_AddingPhotoPathColumnToProductTbl.cs" />
+    <Compile Remove="Data\Migrations\20210208131933_AddingPhotoPathColumnToProductTbl.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

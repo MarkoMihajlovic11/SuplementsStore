@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using SuplementsStore1.Models.ViewModels;
+using System.Collections.Generic;
 
 namespace SuplementsStore1.Models
 {
@@ -6,7 +7,9 @@ namespace SuplementsStore1.Models
     public interface IProductRepository
     {
         public IEnumerable<Product> Products { get; }
+
         void SaveProduct(Product product); //posle dodavanja edid-addnew product metode, da bi mogao da cuva proizvod
         Product DeleteProduct(int productID); //funkcionalnost za brisanje prozivoda
+        Product GetProduct(int productId);
     }
 }

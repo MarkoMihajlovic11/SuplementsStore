@@ -1,11 +1,14 @@
 ﻿using Microsoft.AspNetCore.Http;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace SuplementsStore1.Models
+namespace SuplementsStore1.Models.ViewModels
 {
-    public class Product
+    public class ProductCreateViewModel 
     {
-        public int ProductID { get; set; }
         [Required]
         [MaxLength(100)]
         public string Name { get; set; }
@@ -17,7 +20,7 @@ namespace SuplementsStore1.Models
         [Required]
         [MaxLength(100)]
         public string Category { get; set; }
-        [MaxLength(250)]
-        public string PhotoPath { get; set; }
+        public IFormFile Photo { get; set; }
+
     }
 }
